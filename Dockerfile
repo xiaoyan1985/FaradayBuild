@@ -1,5 +1,4 @@
-FROM ubuntu:16.04
-MAINTAINER Mark Zhang
+FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -q -y --fix-missing \
 	git \
