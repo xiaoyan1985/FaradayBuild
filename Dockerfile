@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -q -y --fix-missing \
 	libxslt1-dev \
 	libfreetype6-dev 
 
-RUN apt-get update && apt-get install -q -y libpng12-dev
+RUN apt-get update && apt-get install libpng12-dev
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 RUN pip install --upgrade pip 
