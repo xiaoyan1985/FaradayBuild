@@ -16,7 +16,6 @@ RUN apt-get update && apt-get install -q -y --fix-missing \
 	libxml2-dev \
 	libxslt1-dev \
 	libfreetype6-dev \
-	libpng12-dev && \
 	apt-get clean  && \
 	rm -rf /var/lib/apt/lists/*
 
