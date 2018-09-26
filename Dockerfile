@@ -16,13 +16,10 @@ RUN apt-get update && apt-get install -q -y --fix-missing \
 	libxml2-dev \
 	libxslt1-dev \
 	libfreetype6-dev \
-	apt-get clean  && \
-	rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update
-RUN apt-get upgrade
-RUN apt-get install libpng12-dev
-
+RUN apt-get update && apt-get install -q -y libpng12-dev
+RUN apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 RUN pip install --upgrade pip 
 	
 WORKDIR /root
