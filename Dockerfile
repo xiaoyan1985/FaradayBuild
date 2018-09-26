@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -q -y --fix-missing \
 	libffi-dev \
 	libxml2-dev \
 	libxslt1-dev \
-	libfreetype6-dev \
+	libfreetype6-dev 
 
 RUN apt-get update && apt-get install -q -y libpng12-dev
 RUN apt-get clean && \
