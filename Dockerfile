@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -q -y --fix-missing \
 	libpng12-dev && \
 	apt-get clean  && \
 	rm -rf /var/lib/apt/lists/*
-RUN apt-get install -q -y --fix-missing libpng12-dev
+RUN apt-get install -q -y libpng12-dev
 RUN pip install --upgrade pip 
 	
 WORKDIR /root
